@@ -14,6 +14,7 @@ public abstract class BaseController {
     public void returnSuccess(Object data){
 
         HttpServletResponse response = ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getResponse();
+
         JSONObject result = new JSONObject();
         result.put("code", StatusEnum.success.getValue());
         result.put("data", data);

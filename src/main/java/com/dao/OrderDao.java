@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 public interface OrderDao{
-    @Select("SELECT * FROM order")
+    @Select("select * from orders")
     List<Order> selectAll();
 
 }
