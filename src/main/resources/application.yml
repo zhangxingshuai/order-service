@@ -16,3 +16,11 @@ spring:
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
   type-aliases-package: com.entity.*
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7000.com:7000/eureka,http://eureka7001.com:7001/eureka

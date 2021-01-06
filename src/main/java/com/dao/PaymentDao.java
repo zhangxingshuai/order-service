@@ -14,4 +14,6 @@ public interface PaymentDao {
 
     @Insert("insert into payment(order_id, price, payment_status, create_user, create_time) values (#{orderId},#{price},#{paymentStatus},#{createUser}, #{createTime})")
     int insert(Payment payment);
+
+
 }
